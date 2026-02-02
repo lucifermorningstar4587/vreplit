@@ -1,0 +1,319 @@
+🎯 PROJECT GOAL
+
+Create a high-end, fully interactive, multi-page Valentine’s website dedicated to my love.
+The website must feel romantic, cute, playful, premium, and emotionally warm, with delightful animations and interactive surprises on every page.
+
+The experience should feel like a love letter turned into a website.
+
+🎨 DESIGN SYSTEM (VERY IMPORTANT)
+🌿 PRIMARY COLOR PALETTE
+
+Primary: Sage Green (#9CAF88 / similar soft sage tones)
+
+Secondary: Warm cream / off-white
+
+Accent: Blush pink, soft rose, muted gold
+
+Occasional heart highlights in pastel red or pink
+
+🖋️ TYPOGRAPHY
+
+Headings: Elegant cursive / handwritten romantic font
+
+Body text: Clean modern sans-serif
+
+Buttons: Rounded, soft, friendly
+
+✨ UI STYLE
+
+Soft shadows, rounded cards
+
+Organic shapes (curves > sharp edges)
+
+Calm, cozy, aesthetic look
+
+Smooth animations only (no harsh motion)
+
+Gentle glow effects in sage green
+
+Fully responsive (mobile-first)
+
+🔊 GLOBAL FEATURES (ON ALL PAGES)
+
+Soft romantic background music with mute/unmute toggle
+
+Floating hearts + tiny leaves subtly animated
+
+Smooth page transitions
+
+Optional dark / night mode (deep sage + moonlight tones)
+
+Cursor interaction (subtle heart or leaf trail on desktop)
+
+🧭 WEBSITE STRUCTURE (MULTI-PAGE)
+🏠 PAGE 1: Landing – “For You 💚”
+
+Purpose: Emotional first impression
+
+Elements:
+
+Full-screen hero section with sage green gradient background
+
+Animated text:
+
+“Hey love… this little corner of the internet is only for you 💚”
+
+Soft floating hearts + leaves animation
+
+Primary CTA button:
+
+“Start the Journey 🌿💖”
+
+Gentle heartbeat-style pulse animation
+
+Scroll indicator shaped like a heart-leaf hybrid
+
+📖 PAGE 2: Our Story
+
+Purpose: Emotional storytelling
+
+Layout:
+
+Vertical timeline with alternating cards
+
+Each card uses soft sage green backgrounds
+
+Content:
+
+Milestones like:
+
+First meet
+
+First conversation
+
+First laugh
+
+First fight 😛
+
+Falling in love
+
+Clicking a milestone opens a modal with:
+
+Smooth fade-in animation
+
+Optional photo placeholder
+
+Cute caption text
+
+Floating sparkles when scrolling
+
+🖼️ PAGE 3: Memory Gallery
+
+Purpose: Nostalgia + warmth
+
+Features:
+
+Grid gallery with rounded cards
+
+Sage green hover overlays
+
+Click → opens cinematic lightbox
+
+Heart “like” button on each image
+
+Cute caption under each memory
+
+Optional category filters:
+
+“Us 💚”
+
+“Cute Moments 🌿”
+
+“Silly Times 😝”
+
+💌 PAGE 4: Love Notes
+
+Purpose: Deep romance
+
+Elements:
+
+Envelope-style cards in sage green + cream
+
+Clicking envelope opens handwritten-style love note
+
+Typewriter animation for text
+
+Background softly blurs
+
+Soft glowing border around the note
+
+Ending line example:
+
+“Forever yours, always 💚”
+
+🎮 PAGE 5: Fun & Games
+
+Purpose: Playfulness
+
+Interactions:
+
+Mini quiz:
+
+“How well do you know me?”
+
+Animated progress heart-leaf meter
+
+Cute reactions for wrong answers
+
+Happy bounce animation for correct answers
+
+Overall playful sage-green UI
+
+🎁 PAGE 6: Surprise
+
+Purpose: Delight
+
+Elements:
+
+Centered button:
+
+“Click to Unlock Your Surprise 🎁”
+
+Box opens with soft pop animation
+
+Heart-leaf confetti rain
+
+Reveal:
+
+Romantic message or quote
+
+Music slightly swells during reveal
+
+🌳 GLOBAL NAVIGATION: LOVE TREE NAVIGATOR (ON EVERY PAGE)
+Concept:
+
+A cute illustrated tree fixed at the bottom center of every page, acting as the primary navigation system.
+
+Design:
+
+Tree in sage green tones
+
+Gentle sway animation (wind effect)
+
+Soft glow on hover
+
+Roots pulse subtly like a heartbeat
+
+On mobile: smaller but still tappable
+
+🍃 LEAF → PAGE LINKS
+
+Each leaf is clickable and navigates to a page:
+
+🍃❤️ Home
+
+🍃📖 Our Story
+
+🍃🖼️ Gallery
+
+🍃💌 Love Notes
+
+🍃🎮 Games
+
+🍃🎁 Surprise
+
+🍃💍 Valentine Page
+
+Interactions:
+
+Hover: leaf wiggle + tiny heart pop
+
+Active page: glowing leaf + pulse
+
+Clicking trunk shows tooltip:
+
+“Pick a leaf, my love 🌿💖”
+
+💍 FINAL PAGE: Will You Be My Valentine? 💚
+
+This page must be interactive and playful.
+
+Layout:
+
+Centered card with sage green glowing border
+
+Large romantic heading:
+
+“Will you be my Valentine? 💚”
+
+Buttons:
+
+YES 💖
+
+NO 😈
+
+❌ WHEN USER CLICKS NO
+
+Button moves or dodges the cursor
+
+Cute emoji pops up 😝💢
+
+Show this exact text:
+
+“hehehhe neek aa chance ledhu le 😌
+muskuni YES nokku 💚”
+
+Slight screen shake
+
+Cute sound effect
+
+✅ WHEN USER CLICKS YES
+
+Full-screen heart + leaf explosion animation
+
+Confetti + fireworks
+
+Show this exact message:
+
+“heehheeh neek verey option ledhu le nen tappa 😘
+Happy Valentine’s Day bangaram 💚”
+
+Romantic music peak
+
+Floating text:
+
+“Forever & Always 🌿💍”
+
+Button:
+
+“Replay Our Story 💖”
+
+🛠️ TECHNICAL & QUALITY REQUIREMENTS
+
+Fully responsive (mobile, tablet, desktop)
+
+Smooth animations (CSS / JS / GSAP-style)
+
+Fast load, no clutter
+
+SEO-friendly structure
+
+Accessible contrast & tap targets
+
+No lorem ipsum text
+
+Prioritize emotional UX over minimalism
+
+🧠 AI BUILDER STRICT INSTRUCTIONS
+
+Treat this as a premium emotional experience
+
+Do NOT use generic templates
+
+Implement all interactions logically
+
+Navigation must rely on the Love Tree
+
+Sage green must be the dominant visual identity
+
+Make the site feel hand-crafted and personal

@@ -1,0 +1,241 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --color-sage: hsl(var(--sage));
+  --color-cream: hsl(var(--cream));
+  --color-blush: hsl(var(--blush));
+  --color-rose: hsl(var(--rose));
+  --color-gold: hsl(var(--gold));
+
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+}
+
+:root {
+  --button-outline: rgba(0, 0, 0, 0.10);
+  --badge-outline: rgba(0, 0, 0, 0.05);
+  --opaque-button-border-intensity: -8;
+  --elevate-1: rgba(0, 0, 0, 0.03);
+  --elevate-2: rgba(0, 0, 0, 0.08);
+
+  --sage: 96 16% 58%;
+  --cream: 40 46% 95%;
+  --blush: 346 56% 86%;
+  --rose: 346 52% 70%;
+  --gold: 44 55% 67%;
+
+  --background: 40 46% 97%;
+  --foreground: 164 24% 16%;
+
+  --card: 40 40% 98%;
+  --card-foreground: 164 24% 16%;
+  --popover: 40 40% 98%;
+  --popover-foreground: 164 24% 16%;
+
+  --primary: 96 16% 58%;
+  --primary-foreground: 40 46% 98%;
+  --secondary: 346 56% 90%;
+  --secondary-foreground: 164 24% 16%;
+
+  --muted: 40 30% 92%;
+  --muted-foreground: 164 14% 34%;
+
+  --accent: 346 52% 70%;
+  --accent-foreground: 40 46% 98%;
+
+  --destructive: 0 72% 55%;
+  --destructive-foreground: 40 46% 98%;
+
+  --border: 96 14% 80%;
+  --input: 96 14% 78%;
+  --ring: 96 16% 58%;
+
+  --font-sans: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-display: "Allura", "Architects Daughter", cursive;
+
+  --radius: 1rem;
+}
+
+.dark {
+  --button-outline: rgba(255, 255, 255, 0.12);
+  --badge-outline: rgba(255, 255, 255, 0.06);
+  --opaque-button-border-intensity: 9;
+  --elevate-1: rgba(255, 255, 255, 0.04);
+  --elevate-2: rgba(255, 255, 255, 0.09);
+
+  --background: 162 26% 10%;
+  --foreground: 40 40% 96%;
+
+  --card: 162 24% 12%;
+  --card-foreground: 40 40% 96%;
+  --popover: 162 24% 12%;
+  --popover-foreground: 40 40% 96%;
+
+  --primary: 96 16% 58%;
+  --primary-foreground: 162 26% 10%;
+
+  --secondary: 162 18% 18%;
+  --secondary-foreground: 40 40% 96%;
+
+  --muted: 162 18% 18%;
+  --muted-foreground: 40 22% 72%;
+
+  --accent: 346 46% 68%;
+  --accent-foreground: 162 26% 10%;
+
+  --border: 162 18% 22%;
+  --input: 162 18% 26%;
+  --ring: 96 16% 58%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    font-family: var(--font-sans);
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  ::selection {
+    background: hsl(var(--blush) / 0.85);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .valentine-surface {
+    background:
+      radial-gradient(1200px 600px at 20% 10%, hsl(var(--blush) / 0.38), transparent 60%),
+      radial-gradient(1000px 600px at 90% 20%, hsl(var(--sage) / 0.35), transparent 55%),
+      radial-gradient(900px 520px at 50% 90%, hsl(var(--gold) / 0.18), transparent 55%),
+      linear-gradient(180deg, hsl(var(--background)), hsl(var(--background)));
+  }
+
+  .valentine-card {
+    background:
+      radial-gradient(600px 240px at 20% 10%, hsl(var(--sage) / 0.16), transparent 60%),
+      radial-gradient(520px 240px at 90% 0%, hsl(var(--blush) / 0.22), transparent 60%),
+      linear-gradient(180deg, hsl(var(--card)), hsl(var(--card)));
+    border: 1px solid hsl(var(--border));
+    box-shadow:
+      0 18px 40px hsl(var(--sage) / 0.10),
+      0 10px 18px rgba(0, 0, 0, 0.06);
+  }
+
+  .valentine-glow {
+    box-shadow:
+      0 0 0 1px hsl(var(--sage) / 0.18),
+      0 0 40px hsl(var(--sage) / 0.22),
+      0 18px 40px rgba(0, 0, 0, 0.08);
+  }
+
+  .valentine-ring:focus-visible {
+    outline: none;
+    box-shadow:
+      0 0 0 4px hsl(var(--cream) / 0.9),
+      0 0 0 6px hsl(var(--sage) / 0.55);
+  }
+
+  .soft-fade-in {
+    animation: softFadeIn 700ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  }
+
+  .floaty {
+    animation: floaty 6.5s ease-in-out infinite;
+  }
+
+  .heartbeat {
+    animation: heartbeat 1.65s ease-in-out infinite;
+  }
+
+  .grain-overlay {
+    position: relative;
+  }
+
+  .grain-overlay::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.20), transparent 35%),
+      radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.16), transparent 40%),
+      radial-gradient(circle at 40% 80%, rgba(0, 0, 0, 0.10), transparent 45%);
+    opacity: 0.08;
+    mix-blend-mode: overlay;
+    filter: blur(0.2px);
+  }
+}
+
+@keyframes softFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  12% {
+    transform: scale(1.03);
+  }
+  24% {
+    transform: scale(1);
+  }
+  44% {
+    transform: scale(1.05);
+  }
+}
